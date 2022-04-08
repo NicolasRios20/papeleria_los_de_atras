@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PAPELERIA</title>
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link href="css/estilos.css" rel="stylesheet">
+    <link rel="stylesheet" href="static/css/styles.css">
+</head>
+
+<body>
+
+    <header>
+        <div class="navbar navbar-expand-lg navbar-dark bg-info">
+            <div class="container">
+                <img src="static/img/icono2.png" alt="icono" class="icono">
+                <a href="/indexinterfaz" class="navbar-brand">
+                    <strong>PAPELERIA LOS DE ATRAS</strong>
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarHeader" aria-controls="navbarHeader" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarHeader">
+                    <h4>{% if usuario %} BIENVENID@ {{usuario}} {% endif %}</h4>
+                    <div class="botones">
+                        <a href="/cerrarsesion" class="btn btn-warning col-md-2 " id="salir"><img src="static/img/cerrar-sesion.png"alt="carrito" class="salir"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    
+
+    <main>
+
+        {% for producto in productos %}
+        <div class="container1">
+            <div class="col1">
+                <div class="card shadow-sm">
+                    <img src="/static/img/{{producto[3]}}">
+                    <div class="card-body">
+                        <h5 class="card-title">{{producto[1]}}</h5>
+                        <p class="card-text">${{producto[2]}}</p>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div class="btn-group">
+                                
+                            </div>
+                            <a href="/comprar/{{producto[0]}}" class="btn btn-success">COMPRAR</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            {%endfor%}
+    
+    </main>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    
+    </body>
+    
+    </html>

@@ -1,0 +1,78 @@
+body {
+    background-image: url(../img/school-supplies-stationery-on-blue-back-to-school-concept-with-copy-space-for-text-flat-lay.jpg);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    overflow: none;
+    height: auto;
+}
+
+main{
+    width: 700px;
+    height: auto;
+    background-color: white;
+    border-radius: 20px;
+    margin-left: 4%;
+    margin-top: 12%;
+}
+
+header{
+    height: 50px;
+    background-color: #EDA138;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    text-align: center;
+    
+}
+
+
+
+.factura{
+    margin-left: 50px;
+    width: 40%;
+    text-align: justify;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.imagen{
+    float: right;
+    width: 40%;
+}
+
+.logocompra{
+    margin-left: 65px;
+    margin-top: 25%;
+}
+
+h2{
+    margin: 10;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+
+
+.login1{
+    float: left;
+    text-align: center;
+    padding: 10px 25px;
+    border-radius: 15px;
+    margin-left:  0;
+    border: none;
+    background-color: #EDA138;
+    color: black;
+    text-decoration: none;
+  }
+
+  .login2{
+      float: right;
+    text-align: center;
+    padding: 10px 25px;
+    border-radius: 15px;
+    margin-right:  60px;
+    border: none;
+    background-color: #EDA138;
+    color: black;
+    text-decoration: none;
+  }
+
+

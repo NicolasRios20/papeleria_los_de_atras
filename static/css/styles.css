@@ -1,0 +1,39 @@
+main{
+    margin: 0 auto;
+    padding: 0 0 0 60px;
+}
+.container {
+    padding: 10px 0;
+      
+}
+
+.botones{
+    margin: 0 0 0 50%;
+}
+
+#comprar{
+    width: 100px;
+    margin: 0px 5px 0 0;
+}
+
+#salir{
+    width: 100px;
+
+}
+
+
+
+.col1{
+    width: 30%;
+    float: left;
+    margin: 10px;
+    
+}
+
+h4{
+    color: white;
+}
+
+#mover{
+    margin-right: 37rem;
+}

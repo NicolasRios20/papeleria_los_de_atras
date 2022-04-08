@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Login Form Design One | Fazt</title>
+    <link rel="stylesheet" href="/static/css/master.css">
+  </head>
+  <body>
+    <div class="login-box">
+      <img src="/static/img/logo1.png" class="avatar" alt="Avatar Image">
+      <h1>Inicio De Sesion </h1>
+      <form class="login" action="{{url_for('login')}}" method="post">
+        <!-- USERNAME INPUT -->
+        <label for="username">CORREO</label>
+        <input name="correo" type="text" placeholder="&#x1f4e7; Ingrese Usuario">
+        <!-- PASSWORD INPUT -->
+        <label for="password">CONTRASEÑA</label>
+        <input name="contrasena" type="password" placeholder="&#x1f512; Ingrese caontraseña">
+        <input type="submit" value="Ingresar">
+        <a href="/reginterfaz">Registrar</a><br>
+      </form>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/static/css/styles1.css">
+    <title>Carrito</title>
+</head>
+<body>
+    <main>
+        <header>
+            <h2 class="titulo">PAPELERIA LOS DE ATRAS</h2>
+        </header>
+        <div class="imagen">
+            <img src="/static/img/compra2.png" alt="logo2" class="logocompra">
+        </div>
+        <div class="factura">
+            <p>Señor(a) <b>{{usuario}}</b> con correo {{email}} </p>
+            <p>
+                su compra ha sido exitosa: <br><br>
+                producto: <b>{{producto}}</b><br>
+                precio: <b>${{precio}}</b>
+            </p> 
+            <p>TOTAL: <b>${{precio}}</b></p><br>
+            <p>Su pedido sera entregado en las proximas 24 horas</p>
+            
+            <a href="/index1" class="login1"><b>tienda</b></a>
+            <a href="/cerrarsesion" class="login2"><b>salir</b></a>
+            <br><br>
+        </div>
+        <br><br>
+
+               
+
+    </main>
+</body>
+</html>
